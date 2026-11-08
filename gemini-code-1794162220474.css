@@ -1,0 +1,319 @@
+/* Estilos generales limpios y profesionales estilo ingeniería/competencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Barra de navegación superior */
+.navbar {
+    background-color: #0d1b2a;
+    color: #ffffff;
+    padding: 15px 0;
+    border-bottom: 3px solid #1b4965;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #48cae4;
+}
+
+.nav-url {
+    background-color: #ffffff;
+    color: #0d1b2a;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Encabezado Principal (Hero) */
+.hero {
+    background: linear-gradient(135deg, #0d1b2a, #1b4965);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.presenta {
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    color: #90e0ef;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.hero-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #48cae4;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: #ade8f4;
+}
+
+.robot-placeholder {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px dashed #90e0ef;
+    border-radius: 8px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #caf0f8;
+    gap: 10px;
+}
+
+.robot-placeholder i {
+    font-size: 2.5rem;
+}
+
+/* Descripción de la empresa */
+.description-section {
+    margin-top: 30px;
+}
+
+.box-desc {
+    background: white;
+    border-left: 5px solid #1b4965;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.box-desc h3 {
+    color: #1b4965;
+    margin-bottom: 10px;
+}
+
+/* Misión, Visión y Valores */
+.mission-vision {
+    margin-top: 30px;
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.mv-box, .values-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.mv-box h3, .values-box h3 {
+    color: #1b4965;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+
+.values-box ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.values-box li {
+    background: #e0fbfc;
+    color: #1b4965;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Catálogo: Tenemos para ofrecer */
+.catalog-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.catalog-section h2 {
+    color: #0d1b2a;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.catalog-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 4px solid #1b4965;
+    transition: transform 0.2s;
+}
+
+.catalog-card:hover {
+    transform: translateY(-5px);
+}
+
+.catalog-card.featured {
+    border-top-color: #0077b6;
+    background: #f0f8ff;
+}
+
+.catalog-card h3 {
+    color: #1b4965;
+    margin-bottom: 10px;
+}
+
+.catalog-card .thumb {
+    background: #e2e8f0;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.status {
+    color: #028090;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.status-proximamente {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background: #ffe5e5;
+    padding: 5px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Sección de interacción / propuesta */
+.feedback-section {
+    margin-top: 40px;
+    background: #1b4965;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.feedback-section h3 {
+    margin-bottom: 10px;
+}
+
+.feedback-cta {
+    font-size: 1.2rem;
+    color: #90e0ef;
+    font-weight: bold;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.social-icons a {
+    color: #90e0ef;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+.email-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.rights {
+    font-size: 0.9rem;
+    color: #a0aec0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+.thanks {
+    color: #48cae4;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Adaptabilidad para celulares */
+@media (max-width: 768px) {
+    .mv-grid {
+        grid-template-columns: 1fr;
+    }
+}
