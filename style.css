@@ -253,9 +253,20 @@ body {
 }
 
 .feedback-cta {
+    display: inline-block;
     font-size: 1.2rem;
     color: #90e0ef;
     font-weight: bold;
+    text-decoration: none;
+    margin-top: 6px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.feedback-cta:hover {
+    color: #ffffff;
+    border-bottom-color: #48cae4;
+    transform: translateY(-2px);
 }
 
 /* Pie de página */
