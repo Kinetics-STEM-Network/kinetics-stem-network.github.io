@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIBOTS — Kinetics STEM Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="kibots-page">
 
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">KINETICS STEM NETWORK</a>
+            <a href="index.html" class="nav-url">Inicio / Catálogo</a>
+        </div>
+    </nav>
+
+    <!-- ENCABEZADO DEL PROYECTO -->
+    <header class="kibots-header">
+        <div class="container">
+            <span class="badge-tag">KIT EDUCATIVO DE ROBÓTICA &amp; SEGURIDAD</span>
+            <h1>KIBOTS</h1>
+            <p class="subtitle">Kit Interactivo de Bomberos y Orientación de Técnicas de Seguridad</p>
+            <p class="lead-note">
+                Simulador didáctico modular y de código abierto orientado a la enseñanza mecatrónica y a la concientización sobre prevención y respuesta temprana ante incendios en entornos educativos.
+            </p>
+            <div class="header-actions">
+                <a href="#proceso" class="btn-primary">Proceso y Diseño</a>
+                <a href="#materiales" class="btn-secondary">Lista de Materiales</a>
+                <a href="index.html" class="btn-ghost">← Volver al inicio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PROCESO DE DESARROLLO -->
+    <section id="proceso" class="container section-block">
+        <div class="section-head">
+            <h2>Proceso de Desarrollo</h2>
+            <p>De la concepción modular y el diseño estructural hasta la lógica autónoma de respuesta.</p>
+        </div>
+
+        <div class="process-grid">
+            <article class="process-step">
+                <span class="step-num">01</span>
+                <h3>Planteamiento y Enfoque Pedagógico</h3>
+                <p>Estructurar un kit accesible y replicable que acerque la robótica, la electrónica y los protocolos de prevención de incendios mediante simulaciones controladas y seguras.</p>
+            </article>
+
+            <article class="process-step">
+                <span class="step-num">02</span>
+                <h3>Diseño Mecánico Modular</h3>
+                <p>Chasis de corte láser en acrílico de dos niveles (base de 214 mm × 152 mm con placa superior de apoyo) para distribuir tracción, alimentación, sensores y módulo de simulación hídrica con estabilidad.</p>
+            </article>
+
+            <article class="process-step">
+                <span class="step-num">03</span>
+                <h3>Integración Electrónica</h3>
+                <p>Conexión del microcontrolador ESP32 DevKit V1 con driver de motores L298N, regulador de voltaje LM2596, módulo relé de 1 canal, sensores de flama KY-026 y sensor ultrasónico HC-SR04.</p>
+            </article>
+
+            <article class="process-step">
+                <span class="step-num">04</span>
+                <h3>Lógica Autónoma y Validación</h3>
+                <p>Programación de una máquina de estados finitos (patrullaje y evasión, alineación hacia la fuente de calor, simulación de extinción y verificación) probada en pista controlada.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- DISEÑO ARQUITECTÓNICO Y FUNCIONAL -->
+    <section id="diseno" class="container section-block">
+        <div class="section-head">
+            <h2>Arquitectura y Diseño del Kit</h2>
+            <p>Organización física y funcional pensada para claridad didáctica, mantenimiento y replicabilidad.</p>
+        </div>
+
+        <div class="design-layout">
+            <div class="design-card">
+                <h3><i class="fa-solid fa-layer-group"></i> Distribución en Dos Niveles</h3>
+                <ul>
+                    <li><strong>Nivel inferior (tracción y energía):</strong> Motores reductores DC (3V–6V) con rueda loca frontal, driver L298N, regulador LM2596 y celdas Li-Ion 18650 para mantener un centro de gravedad estable.</li>
+                    <li><strong>Nivel superior (control y respuesta):</strong> ESP32 DevKit V1, módulo relé y sistema de simulación hídrica (mini bomba de agua de 3V–5V y depósito) de fácil acceso para prácticas.</li>
+                </ul>
+            </div>
+
+            <div class="design-card">
+                <h3><i class="fa-solid fa-microchip"></i> Sensores y Máquina de Estados</h3>
+                <ul>
+                    <li><strong>Detección frontal:</strong> Tres sensores de flama KY-026 en abanico (izquierda, centro, derecha) y sensor ultrasónico HC-SR04 para evasión de obstáculos.</li>
+                    <li><strong>Ciclo operativo:</strong> Patrullaje con evasión → alineación diferencial hacia la señal → activación de relé y mini bomba → verificación y cierre de ciclo.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- LISTA COMPLETA DE MATERIALES -->
+    <section id="materiales" class="container section-block">
+        <div class="section-head">
+            <h2>Materiales Utilizados en KIBOTS</h2>
+            <p>Relación de componentes electrónicos, mecánicos y estructurales que integran el kit.</p>
+        </div>
+
+        <div class="materials-grid">
+            <div class="material-group">
+                <h3><i class="fa-solid fa-bolt"></i> Electrónica y Control</h3>
+                <ul class="materials-list">
+                    <li><span>Microcontrolador ESP32 DevKit V1</span></li>
+                    <li><span>Driver de motores DC L298N</span></li>
+                    <li><span>Módulo regulador de voltaje LM2596</span></li>
+                    <li><span>Módulo relé de 1 canal</span></li>
+                    <li><span>3 × Sensores de flama KY-026</span></li>
+                    <li><span>Sensor ultrasónico HC-SR04</span></li>
+                    <li><span>Mini bomba de agua (3V–5V)</span></li>
+                    <li><span>Cables jumper (macho-macho, macho-hembra, hembra-hembra) y borneras</span></li>
+                </ul>
+            </div>
+
+            <div class="material-group">
+                <h3><i class="fa-solid fa-gears"></i> Mecánica, Estructura y Energía</h3>
+                <ul class="materials-list">
+                    <li><span>Chasis modular en acrílico (corte láser, dos niveles)</span></li>
+                    <li><span>2 × Motores reductores DC (3V–6V) con ruedas</span></li>
+                    <li><span>1 × Rueda loca frontal (caster wheel)</span></li>
+                    <li><span>Baterías Li-Ion 18650 (3.7V) y portabaterías</span></li>
+                    <li><span>Depósito para simulación hídrica y manguera flexible</span></li>
+                    <li><span>Soportes, separadores/postes y tornillería de sujeción</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>Kinetics STEM Network — Ecosistema de robótica educativa y prevención aplicada.</p>
+            <div class="rights">
+                <p>© Derechos reservados - Kinetics STEM Networks</p>
+                <p class="thanks"><a href="index.html" class="footer-back-link">Volver a la página principal</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
